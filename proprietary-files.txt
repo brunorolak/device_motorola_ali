@@ -740,11 +740,7 @@ system/etc/firmware/opalum.tx.ext.config.2:vendor/firmware/opalum.tx.ext.config.
 system/etc/firmware/opalum.tx.ext.config.3:vendor/firmware/opalum.tx.ext.config.3
 
 # Gatekeeper - from deen_sprout:10/QPKS30.54-22-11
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|bea6d682011b465a08b9085f7b5e69b965743eee
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|4c52364a1fb32a524a28e2245eb18ee93536972e
 vendor/lib/hw/gatekeeper.msm8953.so|cd04140788659ae07a50081baeb3eb2e42f37028
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|8c5a8f0bec5942dc3527cff95ae09959234e9e58
 vendor/lib64/hw/gatekeeper.msm8953.so|1086e5dcda7aa2bed7ac015f7850095f6199a1c2
 
 # Keymaster - from deen_sprout:10/QPKS30.54-22-11
