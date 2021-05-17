@@ -7,28 +7,16 @@ vendor/etc/acdbdata/common/Hdmi_cal.acdb
 vendor/etc/acdbdata/common/Headset_cal.acdb
 vendor/etc/acdbdata/common/Speaker_cal.acdb
 
-# Audio - ADSPD
-vendor/bin/hw/motorola.hardware.audio.adspd@1.0-service
-vendor/etc/init/motorola.hardware.audio.adspd@1.0-service.rc
-vendor/lib/hw/audio.motvr.default.so
-vendor/lib/hw/sound_trigger.primary.default.so
-vendor/lib/libadspd.so
-vendor/lib/motorola.hardware.audio.adspd@1.0.so
-vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so
-vendor/lib/motorola.hardware.audio.adspd@1.0_vendor.so
+# Audio - Prebuilt - from deen_sprout:10/QPKS30.54-22-20
+vendor/lib/hw/audio.primary.msm8953.so|2066cc9b744cd73f8d8e6d872a88e07438da451c
+vendor/lib/libmotaudioutils.so|fb85d0d6f594fca7fdb566a7c199296aa7e5c0a4
+vendor/lib/libsensorndkbridge.so|8777fa7b57d7b96109cd0618de012895739c4934
+vendor/lib/libtinyalsa.so|e9824bea1685b52c2d169f57ac5777b7c5655519
+vendor/lib/libtinycompress_vendor.so|ce1edfdbaba862f2f639dc3abf4adb7ad99724ae
 
-# Audio - Prebuilt
-vendor/lib/hw/audio.primary.msm8953.so|e0cdbfafed88f6ab51e3e688cf5f5256201f48e4
-vendor/lib/libmotaudioutils.so
-vendor/lib/libsensorndkbridge.so
-vendor/lib/libtinyalsa.so
-vendor/lib/libtinycompress.so
-vendor/lib/libtinycompress_vendor.so
-vendor/lib/libunshorten.so
-
-# Audio - Soundfx
-vendor/lib/soundfx/libspeakerbundle.so
-vendor/lib/soundfx/libmmieffectswrapper.so
+# Audio - Soundfx - from deen_sprout:10/QPKS30.54-22-20
+vendor/lib/soundfx/libmmieffectswrapper.so|e9c012af44422c9e7e8719f0fe7c848799881dc8
+vendor/lib/soundfx/libspeakerbundle.so|180b66d38e8390c423ed29bfb3265a474d007ee0
 
 # Camera
 vendor/lib/hw/camera.msm8953.so|3696b9e377f8b6e77c6ece5a63603019ddc84bbc
