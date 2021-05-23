@@ -14,7 +14,7 @@
 /dev/block/bootdevice/by-name/persist       /mnt/vendor/persist       ext4	noatime,nosuid,nodev,barrier=1	                                                 wait
 /devices/*/xhci-hcd.*.auto/usb*		    auto		      auto	defaults					                                 voldmanaged=usb:auto:auto,encryptable=footer
 /devices/soc/7864900.sdhci/mmc_host*	    auto		      auto	nosuid,nodev					                                 wait,voldmanaged=sdcard1
-/dev/block/zram0		            none		      swap      defaults	                                                                 zramsize=1073741824,max_comp_streams=8
+/dev/block/zram0		            none		      swap      defaults	                                                                 zramsize=2147483648,max_comp_streams=8,zram_backingdev_size=512M
 
 /dev/block/bootdevice/by-name/system        /system                   ext4      ro,barrier=1                                                                     wait,recoveryonly
 /dev/block/bootdevice/by-name/vendor        /vendor                   ext4      ro,barrier=1                                                                     wait,recoveryonly
