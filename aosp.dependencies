@@ -1,13 +1,32 @@
 [
   {
-    "repository": "device_motorola_msm8953-common",
-    "target_path": "device/motorola/msm8953-common",
-    "branch": "eleven"
+    "remote": "github",
+    "repository": "brunorolak/vendor_motorola_msm8953-common",
+    "target_path": "vendor/motorola/msm8953-common",
+    "revision": "eleven"
   },
   {
-    "remote": "pixel-devices-blobs",
-    "repository": "vendor_motorola_ali",
+    "remote": "github",
+    "repository": "brunorolak/vendor_motorola_ali",
     "target_path": "vendor/motorola/ali",
-    "branch": "eleven"
+    "revision": "eleven"
+  },
+  {
+    "remote": "github",
+    "repository": "brunorolak/packages_apps_CameraGo",
+    "target_path": "packages/apps/CameraGo",
+    "revision": "eleven"
+  },
+  {
+    "remote": "github",
+    "repository": "PixelExperience/packages_resources_devicesettings-custom ",
+    "target_path": "packages/resources/devicesettings-custom",
+    "revision": "eleven"
+  },  
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_system_qcom",
+    "target_path": "system/qcom",
+    "revision": "lineage-18.1"
   }
 ]
