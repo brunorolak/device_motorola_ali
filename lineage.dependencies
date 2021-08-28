@@ -1,26 +1,24 @@
 [
   {
-    "remote": "github",
-    "repository": "brunorolak/vendor_motorola_msm8953-common",
+    "repository": "vendor_motorola_msm8953-common",
     "target_path": "vendor/motorola/msm8953-common",
-    "branch": "eleven"
+    "branch": "lineage-19.1"
   },
   {
-    "remote": "github",
-    "repository": "brunorolak/vendor_motorola_ali",
+    "repository": "vendor_motorola_ali",
     "target_path": "vendor/motorola/ali",
-    "branch": "eleven"
+    "branch": "lineage-19.1"
   },
   {
     "remote": "github",
     "repository": "PixelExperience/packages_resources_devicesettings-custom ",
     "target_path": "packages/resources/devicesettings-custom",
-    "branch": "eleven"
+    "branch": "lineage-19.1"
   },  
   {
     "remote": "github",
     "repository": "LineageOS/android_system_qcom",
     "target_path": "system/qcom",
-    "branch": "lineage-18.1"
+    "branch": "lineage-19.1"
   }
 ]
