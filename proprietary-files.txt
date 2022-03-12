@@ -54,6 +54,7 @@ vendor/lib/lib_mot_app6_metadata.so
 vendor/lib/lib_mot_led_calibration.so
 vendor/lib/libmot_afd.so
 vendor/lib/lib_motsensorlistener.so
+vendor/lib/libunshorten.so
 
 # Camera-bin
 vendor/bin/mm-qcamera-daemon
