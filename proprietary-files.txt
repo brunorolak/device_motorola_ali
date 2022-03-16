@@ -740,16 +740,15 @@ system/etc/firmware/opalum.tx.ext.config.1:vendor/firmware/opalum.tx.ext.config.
 system/etc/firmware/opalum.tx.ext.config.2:vendor/firmware/opalum.tx.ext.config.2
 system/etc/firmware/opalum.tx.ext.config.3:vendor/firmware/opalum.tx.ext.config.3
 
-# Gatekeeper - from deen_sprout:10/QPKS30.54-22-11
-vendor/lib/hw/gatekeeper.msm8953.so|cd04140788659ae07a50081baeb3eb2e42f37028
-vendor/lib64/hw/gatekeeper.msm8953.so|1086e5dcda7aa2bed7ac015f7850095f6199a1c2
+# Gatekeeper - from deen_sprout - QPKS30.54-22-12
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|bea6d682011b465a08b9085f7b5e69b965743eee
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|8c5a8f0bec5942dc3527cff95ae09959234e9e58
 
-# Keymaster - from deen_sprout:10/QPKS30.54-22-11
+# Keymaster - from deen_sprout - QPKS30.54-22-12
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|ac0aabf396888c9dc8b6dc23291e190daa943e24
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
-vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so|d447552ac66797c255a64f41dbdeb421c55e19fb
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|6a04ddf5b92e97596e3764d2474ca8c26fa80139
-vendor/lib64/hw/keystore.msm8953.so|9660e1c13a3589114cf18db58e5b3c3c9e14059b
 vendor/lib64/libkeymasterdeviceutils.so|5dcb23eb145570876dd1f4f05ca56a114bc9de56
 vendor/lib64/libkeymasterprovision.so|3eb6d2ed05871605cf020bf8459296aea2453f90
 vendor/lib64/libkeymasterutils.so|75d58b3f6aea66220c3352e4bef33dad9333fd1d
