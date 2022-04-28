@@ -775,10 +775,6 @@ vendor/firmware/FT8006U_Pramboot.bin
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 
-#Sensors
-vendor/lib/sensors.ssc.so
-vendor/lib64/sensors.ssc.so
-
 # Sound Card - Marley
 vendor/firmware/marley-dsp1-ultrasound.wmfw
 vendor/firmware/marley-dsp2-aov-frontend.wmfw
