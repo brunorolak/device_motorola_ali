@@ -1,7 +1,7 @@
 android_app_import {
 	name: "CamX",
 	owner: "Graphene",
-	apk: "prebuilt/product/priv-app/GrapheneCamera/Camera-17.apk",
+	apk: "Camera-16.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
