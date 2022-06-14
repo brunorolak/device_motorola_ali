@@ -46,3 +46,6 @@ on boot
 
     on init && property:ro.boot.hardware.sku=XT1925-4
     setprop ro.boot.product.hardware.sku nfc
+
+    on init && property:ro.boot.hardware.sku=XT1925-7
+    setprop ro.boot.product.hardware.sku nfc
