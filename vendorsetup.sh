@@ -17,6 +17,7 @@ echo ""
 # HAL's
 echo "Cheking if Hals is right"
 
+mkdir hardware/qcom-caf/msm8996/audio
 cd hardware/qcom-caf/msm8996/audio
 git status | tee gitdata.txt
 if
@@ -25,11 +26,13 @@ echo "HAL is okay"
 cd ../../../..
 else
 echo "Cloning AEX Hals"
-git clone https://github.com/AospExtended/platform_hardware_qcom_audio -b 12.x-caf-msm8996 hardware/qcom-caf/msm8996/audio
 cd ../../../..
+rm -rf hardware/qcom-caf/msm8996/audio
+git clone https://github.com/AospExtended/platform_hardware_qcom_audio -b 12.x-caf-msm8996 hardware/qcom-caf/msm8996/audio
 echo ""
 fi
 
+mkdir hardware/qcom-caf/msm8996/media
 cd hardware/qcom-caf/msm8996/media
 git status | tee gitdata.txt
 if
@@ -38,11 +41,13 @@ echo "HAL is okay"
 cd ../../../..
 else
 echo "Cloning AEX Hals"
-git clone https://github.com/AospExtended/platform_hardware_qcom_media -b 12.x-caf-msm8996 hardware/qcom-caf/msm8996/media
 cd ../../../..
+rm -rf hardware/qcom-caf/msm8996/media
+git clone https://github.com/AospExtended/platform_hardware_qcom_media -b 12.x-caf-msm8996 hardware/qcom-caf/msm8996/media
 echo ""
 fi
 
+mkdir hardware/qcom-caf/msm8996/display
 cd hardware/qcom-caf/msm8996/display
 git status | tee gitdata.txt
 if
@@ -51,8 +56,9 @@ echo "HAL is okay"
 cd ../../../..
 else
 echo "Cloning AEX Hals"
-git clone https://github.com/AospExtended/platform_hardware_qcom_display -b 12.x-caf-msm8996 hardware/qcom-caf/msm8996/display
 cd ../../../..
+rm -rf hardware/qcom-caf/msm8996/display
+git clone https://github.com/AospExtended/platform_hardware_qcom_display -b 12.x-caf-msm8996 hardware/qcom-caf/msm8996/display
 echo ""
 fi
 
