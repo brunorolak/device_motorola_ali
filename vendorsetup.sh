@@ -62,3 +62,13 @@ git clone -b twelve https://github.com/PixelExperience/packages_apps_FMRadio pac
 git clone -b twelve https://github.com/PixelExperience/vendor_qcom_opensource_libfmjni vendor/qcom/opensource/libfmjni
 echo ""
 
+# Delete / Debloat Apps
+echo "Deleting / Debloating Apps"
+
+#AudioFX
+echo "Removing AudioFX"
+cd  packages/apps/
+rm -rf AudioFX
+cd ../..
+echo ""
+
