@@ -1,17 +1,17 @@
 # Clone/Fetch Upstream Device Dependencies
 # Device tree
 echo "cloning commmon"
-git clone -b lineage-19.1 git@github.com:brunorolak/device_motorola_msm8953-common.git device/motorola/msm8953-common
+git clone -b 12.1 git@github.com:brunorolak/device_motorola_msm8953-common.git device/motorola/msm8953-common
 echo ""
 
 echo "cloning vendor blobs"
-git clone -b lineage-19.1 git@github.com:brunorolak/vendor_motorola_ali.git vendor/motorola/ali
-git clone -b lineage-19.1 git@github.com:brunorolak/vendor_motorola_msm8953-common.git vendor/motorola/msm8953-common
+git clone -b 12.1 git@github.com:brunorolak/vendor_motorola_ali.git vendor/motorola/ali
+git clone -b 12.1 git@github.com:brunorolak/vendor_motorola_msm8953-common.git vendor/motorola/msm8953-common
 echo ""
 
 # Kernel
 echo "cloning kernel and clang"
-git clone -b lineage-19.1 git@github.com:brunorolak/kernel_motorola_msm8953.git kernel/motorola/msm8953
+git clone -b 12.1 git@github.com:brunorolak/kernel_motorola_msm8953.git kernel/motorola/msm8953
 echo ""
 
 # HAL's
