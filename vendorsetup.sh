@@ -90,10 +90,10 @@ echo "If cherry-pick fails use https://gerrit.aicp-rom.com/q/topic:twelve-ultral
 echo ""
 
 # FM Radio App
-echo "Cloning libs and app from Pixel Experience"
-git clone -b twelve https://github.com/PixelExperience/packages_apps_FMRadio packages/apps/FMRadio
-git clone -b twelve https://github.com/PixelExperience/vendor_qcom_opensource_libfmjni vendor/qcom/opensource/libfmjni
-echo ""
+#echo "Cloning libs and app from Pixel Experience"
+#git clone -b twelve https://github.com/PixelExperience/packages_apps_FMRadio packages/apps/FMRadio
+#git clone -b twelve https://github.com/PixelExperience/vendor_qcom_opensource_libfmjni vendor/qcom/opensource/libfmjni
+#echo ""
 
 # Delete / Debloat Apps
 echo "Deleting / Debloating Apps"
