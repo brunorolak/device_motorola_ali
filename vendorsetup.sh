@@ -15,12 +15,46 @@ git clone -b lineage-19.1 git@github.com:brunorolak/kernel_motorola_msm8953.git 
 echo ""
 
 # HAL's
-echo "removing qcom-caf 8996 and cloning Hal's from AEX"
-cd hardware/qcom-caf/msm8996 && rm -rf display &&  rm -rf audio && rm -rf media && cd ../../.. 
-git clone https://github.com/AospExtended/platform_hardware_qcom_audio -b 12.x-caf-msm8996 hardware/qcom-caf/msm8996/audio && 
-git clone https://github.com/AospExtended/platform_hardware_qcom_display -b 12.x-caf-msm8996 hardware/qcom-caf/msm8996/display && 
-git clone https://github.com/AospExtended/platform_hardware_qcom_media -b 12.x-caf-msm8996 hardware/qcom-caf/msm8996/media
+echo "Cheking if Hals is right"
+
+cd hardware/qcom-caf/msm8996/audio
+git status | tee gitdata.txt
+if
+grep -q 12.x-caf-msm8996 "gitdata.txt" ; then
+echo "HAL is okay"
+cd ../../../..
+else
+echo "Cloning AEX Hals"
+git clone https://github.com/AospExtended/platform_hardware_qcom_audio -b 12.x-caf-msm8996 hardware/qcom-caf/msm8996/audio
+cd ../../../..
 echo ""
+fi
+
+cd hardware/qcom-caf/msm8996/media
+git status | tee gitdata.txt
+if
+grep -q 12.x-caf-msm8996 "gitdata.txt" ; then
+echo "HAL is okay"
+cd ../../../..
+else
+echo "Cloning AEX Hals"
+git clone https://github.com/AospExtended/platform_hardware_qcom_media -b 12.x-caf-msm8996 hardware/qcom-caf/msm8996/media
+cd ../../../..
+echo ""
+fi
+
+cd hardware/qcom-caf/msm8996/display
+git status | tee gitdata.txt
+if
+grep -q 12.x-caf-msm8996 "gitdata.txt" ; then
+echo "HAL is okay"
+cd ../../../..
+else
+echo "Cloning AEX Hals"
+git clone https://github.com/AospExtended/platform_hardware_qcom_display -b 12.x-caf-msm8996 hardware/qcom-caf/msm8996/display
+cd ../../../..
+echo ""
+fi
 
 # FM Radio App
 echo "Cloning libs and app from Pixel Experience"
