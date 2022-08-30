@@ -17,6 +17,9 @@ echo ""
 # HAL's
 echo "Cheking if Hals is right"
 
+mkdir hardware/
+mkdir hardware/qcom-caf/
+mkdir hardware/qcom-caf/msm8996/
 mkdir hardware/qcom-caf/msm8996/audio
 cd hardware/qcom-caf/msm8996/audio
 git status | tee gitdata.txt
