@@ -51,6 +51,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CameraGo
 
+# Dolby 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/audio/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
+    $(DEVICE_PATH)/configs/audio/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor.xml \
+    $(DEVICE_PATH)/configs/audio/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.1-service \
